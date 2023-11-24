@@ -4,8 +4,9 @@ const regBtn = btns[1];
 const mainBtn = document.getElementsByClassName("headName")[0];
 const currentURL = window.location.href;
 let nextURL = currentURL;
-console.log(!currentURL.includes("log"));
-
+console.log(
+  currentURL.substring(0, currentURL.lastIndexOf(".", currentURL.length) + 5),
+);
 mainBtn.addEventListener("click", () => {
   window.location.href = currentURL.substring(
     0,
@@ -24,7 +25,6 @@ if (!currentURL.includes("log")) {
     window.location.href = `${nextURL}/log`;
   });
 }
-console.log(!currentURL.includes("reg"));
 if (!currentURL.includes("reg")) {
   if (currentURL.includes("log")) {
     nextURL = currentURL.substring(
