@@ -10,6 +10,7 @@ body {
   justify-content: space-between;
 }
 .headName {
+  cursor: pointer;
   display: flex;
   font-size: 2vw;
   align-items: center;

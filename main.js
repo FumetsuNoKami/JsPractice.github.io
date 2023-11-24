@@ -2,37 +2,13 @@ const btns = document.getElementsByClassName("headBtn");
 const logBtn = btns[0];
 const regBtn = btns[1];
 const mainBtn = document.getElementsByClassName("headName")[0];
-const currentURL = window.location.href;
-let nextURL = currentURL;
+const mainURL = "https://fumetsunokami.github.io/JsPractice.github.io";
 mainBtn.addEventListener("click", () => {
-  window.location.href = currentURL.substring(
-    0,
-    currentURL.lastIndexOf(".", currentURL.length) + 3,
-  );
-  console.log(
-    currentURL.substring(0, currentURL.lastIndexOf(".", currentURL.length) + 3),
-  );
+  window.location.href = mainURL;
 });
-
-if (!currentURL.includes("log")) {
-  if (currentURL.includes("reg")) {
-    nextURL = currentURL.substring(
-      0,
-      currentURL.lastIndexOf(".", currentURL.length) + 3,
-    );
-  }
-  logBtn.addEventListener("click", () => {
-    window.location.href = `${nextURL}/log`;
-  });
-}
-if (!currentURL.includes("reg")) {
-  if (currentURL.includes("log")) {
-    nextURL = currentURL.substring(
-      0,
-      currentURL.lastIndexOf(".", currentURL.length) + 3,
-    );
-  }
-  regBtn.addEventListener("click", () => {
-    window.location.href = `${nextURL}/reg`;
-  });
-}
+logBtn.addEventListener("click", () => {
+  window.location.href = `${mainURL}/log`;
+});
+regBtn.addEventListener("click", () => {
+  window.location.href = `${mainURL}/reg`;
+});
