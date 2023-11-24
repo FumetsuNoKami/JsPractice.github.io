@@ -3,6 +3,8 @@ logBtn = btns[0];
 regBtn = btns[1];
 currentURL = window.location.href;
 
+console.log(!currentURL.includes("log"));
+
 if (!currentURL.includes("log")) {
   if (currentURL.includes("reg")) {
     currentURL = currentURL.substring(
@@ -11,9 +13,10 @@ if (!currentURL.includes("log")) {
     );
   }
   logBtn.addEventListener("click", () => {
-    window.location.href = `${currentURL}log`;
+    window.location.href = `${currentURL}/log`;
   });
 }
+console.log(!currentURL.includes("reg"));
 if (!currentURL.includes("reg")) {
   if (currentURL.includes("log")) {
     currentURL = currentURL.substring(
@@ -22,6 +25,6 @@ if (!currentURL.includes("reg")) {
     );
   }
   regBtn.addEventListener("click", () => {
-    window.location.href = `${currentURL}reg`;
+    window.location.href = `${currentURL}/reg`;
   });
 }
