@@ -1,9 +1,17 @@
 const btns = document.getElementsByClassName("headBtn");
 const logBtn = btns[0];
 const regBtn = btns[1];
+const mainBtn = document.getElementsByClassName("headName")[0];
 const currentURL = window.location.href;
 let nextURL = currentURL;
 console.log(!currentURL.includes("log"));
+
+mainBtn.addEventListener("click", () => {
+  window.location.href = currentURL.substring(
+    0,
+    currentURL.lastIndexOf(".", currentURL.length) + 3,
+  );
+});
 
 if (!currentURL.includes("log")) {
   if (currentURL.includes("reg")) {
