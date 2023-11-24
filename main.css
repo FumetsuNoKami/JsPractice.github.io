@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: linear-gradient(whitesmoke, bisque) no-repeat;
+  background: linear-gradient(whitesmoke, bisque, whitesmoke);
 }
 .container {
   display: flex;
@@ -28,7 +28,7 @@ body {
 .headBtn {
   margin-left: 1vw;
   font-size: 2vw;
-  background-color: #564532;
+  background-color: whitesmoke;
   color: bisque;
   transition-duration: 0.2s;
 }

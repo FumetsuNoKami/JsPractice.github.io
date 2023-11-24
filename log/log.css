@@ -1,0 +1,10 @@
+.logCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logForm {
+  display: flex;
+  flex-direction: column;
+}
