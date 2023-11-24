@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: linear-gradient(whitesmoke, bisque, whitesmoke);
+  background: linear-gradient(bisque, whitesmoke, whitesmoke, bisque);
 }
 .container {
   display: flex;
@@ -30,9 +30,11 @@ body {
   margin-left: 1vw;
   font-size: 2vw;
   background-color: whitesmoke;
-  color: bisque;
+  border-radius: 10px;
+  color: black;
   transition-duration: 0.2s;
 }
 .headBtn:hover {
+  box-shadow: dimgrey 0 0 10px 1px;
   transform: scale(1.05);
 }
