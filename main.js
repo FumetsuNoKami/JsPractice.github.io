@@ -13,7 +13,7 @@ if (!currentURL.includes("log")) {
     );
   }
   logBtn.addEventListener("click", () => {
-    window.location.href = `${currentURL}/log`;
+    window.location.href = `${nextURL}/log`;
   });
 }
 console.log(!currentURL.includes("reg"));
@@ -25,6 +25,6 @@ if (!currentURL.includes("reg")) {
     );
   }
   regBtn.addEventListener("click", () => {
-    window.location.href = `${currentURL}/reg`;
+    window.location.href = `${nextURL}/reg`;
   });
 }
