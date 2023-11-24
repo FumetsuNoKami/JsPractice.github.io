@@ -5,6 +5,7 @@ logBtn.addEventListener("click", () => {
   window.location.href = "http://localhost:63342/JsPractice/reg/index.html";
 });
 currentURL = window.location.href;
+console.log(currentURL);
 regBtn.addEventListener("click", () => {
   window.location.href = `${currentURL}/reg/index.html`;
 });
