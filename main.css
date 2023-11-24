@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  background: linear-gradient(whitesmoke, bisque) no-repeat;
+}
+.container {
+  display: flex;
+  padding: 1vw;
+  background-color: #000;
+  color: bisque;
+  justify-content: space-between;
+}
+.headName {
+  display: flex;
+  font-size: 2vw;
+  align-items: center;
+  text-decoration: none;
+  color: bisque;
+}
+.headImg {
+  width: 6vw;
+}
+.headBtns {
+  display: flex;
+  width: 20%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.headBtn {
+  margin-left: 1vw;
+  font-size: 2vw;
+  background-color: #564532;
+  color: bisque;
+  transition-duration: 0.2s;
+}
+.headBtn:hover {
+  transform: scale(1.05);
+}
