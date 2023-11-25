@@ -7,8 +7,8 @@ mainBtn.addEventListener("click", () => {
   window.location.href = mainURL;
 });
 logBtn.addEventListener("click", () => {
-  window.location.href = `login`;
+  window.location.href = `./login`;
 });
 regBtn.addEventListener("click", () => {
-  window.location.href = `registration`;
+  window.location.href = `${mainURL}/registration`;
 });

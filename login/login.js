@@ -47,5 +47,5 @@ subBtn.addEventListener("click", loginEmailPassword);
 
 const registrBtn = document.getElementsByClassName("registerBtn")[0];
 registrBtn.addEventListener("click", () => {
-  window.location.href = `../registration`;
+  window.location.href = `/registration`;
 });
