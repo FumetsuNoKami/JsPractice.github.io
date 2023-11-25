@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Talk&Coffee</title>
     <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../log.css" />
     <link rel="stylesheet" href="reg.css" />
     <script src="../main.js" defer></script>
     <script src="reg.js" defer></script>
@@ -24,13 +25,50 @@
         <button class="headBtn">Register</button>
       </div>
     </div>
-
-    <div class="reg">
-      <form class="regForm">
-        <input type="text" />
-        <input type="password" />
+    <div class="logCont">
+      <form class="logForm">
+        <p><b>Welcome!</b></p>
+        <b>Sign in to</b>
+        Lorem ipsum dolor sit amet.
+        <label class="inpLabel">Email</label>
+        <label>
+          <input
+            class="logInput"
+            type="email"
+            placeholder="Enter your email address"
+          />
+        </label>
+        <label class="inpLabel">Username</label>
+        <label>
+          <input
+            class="logInput"
+            type="text"
+            placeholder="Enter your Username"
+          />
+        </label>
+        <label class="inpLabel">Password</label>
+        <label>
+          <input
+            class="logInput"
+            type="password"
+            placeholder="Enter your Password"
+          />
+        </label>
+        <label class="inpLabel">Confirm Password</label>
+        <label>
+          <input
+            class="logInput"
+            type="password"
+            placeholder="Enter your Password"
+          />
+        </label>
+        <input class="logSub" type="submit" value="Log in" />
+        <div class="formOffer">
+          Already have an account?
+          <a class="signInBtn"><b>Sign in</b></a>
+        </div>
       </form>
-      <img src="../src/small-team.png" />
+      <img class="logImg" src="../src/small-team.png" alt="logImg" />
     </div>
   </body>
 </html>

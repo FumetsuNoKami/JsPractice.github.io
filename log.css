@@ -31,6 +31,7 @@
   opacity: 0.5;
 }
 .inpLabel {
+  font-size: 0.8em;
   color: grey;
   align-self: start;
   margin-top: 3vh;
@@ -46,6 +47,7 @@
   background-color: black;
   color: whitesmoke;
   border-radius: 2px;
+  transition-duration: 0.3s;
 }
 .logSub:hover {
   transform: scale(1.1);
