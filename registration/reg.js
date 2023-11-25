@@ -53,5 +53,5 @@ subBtn.addEventListener("click", createUser);
 
 const signInBtn = document.getElementsByClassName("signInBtn")[0];
 signInBtn.addEventListener("click", () => {
-  window.location.href = `/login`;
+  window.location.href = `${mainURL}/login`;
 });

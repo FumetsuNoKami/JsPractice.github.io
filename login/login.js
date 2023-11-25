@@ -1,10 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
 import {
   getAuth,
-  onAuthStateChanged,
-  createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  connectAuthEmulator,
 } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js";
 
 const firebaseApp = initializeApp({
@@ -47,5 +44,5 @@ subBtn.addEventListener("click", loginEmailPassword);
 
 const registrBtn = document.getElementsByClassName("registerBtn")[0];
 registrBtn.addEventListener("click", () => {
-  window.location.href = `/registration`;
+  window.location.href = `${mainURL}/registration`;
 });
