@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="../main.css" />
     <link rel="stylesheet" href="../log.css" />
     <script src="../main.js" defer></script>
-    <script src="log.js" defer></script>
+    <script type="module" src="login.js" defer></script>
   </head>
   <body>
     <div class="container">
       <a class="headName">
-        <img class="headImg" src="../src/logo1.png" alt="cup" />
+        <img class="headImg" src="../img/logo1.png" alt="cup" />
         <div>Talk&Coffee</div>
       </a>
       <div class="headBtns">
@@ -29,29 +29,31 @@
         <p><b>Welcome!</b></p>
         <b>Sign in to</b>
         Lorem ipsum dolor sit amet.
-        <label class="inpLabel">Username</label>
+        <label class="inpLabel">Email</label>
         <label>
           <input
+            id="logEmail"
             class="logInput"
-            type="text"
-            placeholder="Enter your Username"
+            type="email"
+            placeholder="Enter your Email"
           />
         </label>
         <label class="inpLabel">Password</label>
         <label class="passLabel">
           <input
+            id="pass"
             class="logInput"
             type="password"
             placeholder="Enter your Password"
           />
         </label>
-        <input class="logSub" type="submit" value="Log in" />
+        <input class="logSub" type="button" value="Log in" />
         <div class="formOffer">
           Don`t have an account?
           <a class="registerBtn"><b>Register</b></a>
         </div>
       </form>
-      <img class="logImg" src="../src/small-team.png" alt="logImg" />
+      <img class="logImg" src="../img/small-team.png" alt="logImg" />
     </div>
   </body>
 </html>

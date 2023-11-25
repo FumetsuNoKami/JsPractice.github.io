@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="../log.css" />
     <link rel="stylesheet" href="reg.css" />
     <script src="../main.js" defer></script>
-    <script src="reg.js" defer></script>
+    <script type="module" src="reg.js" defer></script>
   </head>
   <body>
     <div class="container">
       <a class="headName">
-        <img class="headImg" src="../src/logo1.png" alt="cup" />
+        <img class="headImg" src="../img/logo1.png" alt="cup" />
         <div>Talk&Coffee</div>
       </a>
       <div class="headBtns">
@@ -33,22 +33,16 @@
         <label class="inpLabel">Email</label>
         <label>
           <input
+            id="regEmail"
             class="logInput"
             type="email"
             placeholder="Enter your email address"
           />
         </label>
-        <label class="inpLabel">Username</label>
-        <label>
-          <input
-            class="logInput"
-            type="text"
-            placeholder="Enter your Username"
-          />
-        </label>
         <label class="inpLabel">Password</label>
         <label>
           <input
+            id="regPass"
             class="logInput"
             type="password"
             placeholder="Enter your Password"
@@ -57,18 +51,19 @@
         <label class="inpLabel">Confirm Password</label>
         <label>
           <input
+            id="passConf"
             class="logInput"
             type="password"
-            placeholder="Enter your Password"
+            placeholder="Confirm Password"
           />
         </label>
-        <input class="logSub" type="submit" value="Log in" />
+        <input class="logSub" type="button" value="Sign up" />
         <div class="formOffer">
           Already have an account?
           <a class="signInBtn"><b>Sign in</b></a>
         </div>
       </form>
-      <img class="logImg" src="../src/small-team.png" alt="logImg" />
+      <img class="logImg" src="../img/small-team.png" alt="logImg" />
     </div>
   </body>
 </html>
