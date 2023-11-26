@@ -55,3 +55,22 @@ const signInBtn = document.getElementsByClassName("signInBtn")[0];
 signInBtn.addEventListener("click", () => {
   window.location.href = `${mainURL}/login`;
 });
+
+const checkBox1 = document.getElementById("check1");
+const checkBox2 = document.getElementById("check2");
+checkBox1.addEventListener("click", () => {
+  const loginPassword = document.getElementById("regPass");
+  if (checkBox1.checked) {
+    loginPassword.type = "text";
+  } else {
+    loginPassword.type = "password";
+  }
+});
+checkBox2.addEventListener("click", () => {
+  const loginPassword = document.getElementById("passConf");
+  if (checkBox2.checked) {
+    loginPassword.type = "text";
+  } else {
+    loginPassword.type = "password";
+  }
+});

@@ -27,6 +27,13 @@
   border-radius: 2px;
   text-indent: 10px;
 }
+.showCheck {
+  text-align: left;
+  font-size: 0.6em;
+  margin-top: -1vh;
+  align-self: start;
+  color: grey;
+}
 .logInput::placeholder {
   opacity: 0.5;
 }

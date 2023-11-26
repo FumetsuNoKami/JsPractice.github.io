@@ -46,3 +46,13 @@ const registrBtn = document.getElementsByClassName("registerBtn")[0];
 registrBtn.addEventListener("click", () => {
   window.location.href = `${mainURL}/registration`;
 });
+
+const checkBox = document.getElementById("check");
+checkBox.addEventListener("click", (e) => {
+  const loginPassword = document.getElementById("pass");
+  if (checkBox.checked) {
+    loginPassword.type = "text";
+  } else {
+    loginPassword.type = "password";
+  }
+});
